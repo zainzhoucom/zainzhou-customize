@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: zainzhou-customize
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.18.40.85:8848
+        enabled: true
+      config:
+        server-addr: 172.18.40.85:8848
+        file-extension: yaml
+        enabled: true
+        refresh-enabled: true
